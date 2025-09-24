@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CharacterType" load_steps=46 format=3 uid="uid://b6e7t0pcppdov"]
 
-[ext_resource type="Script" path="res://Character Creation/scripts/CharacterType.gd" id="1_humgy"]
-[ext_resource type="Script" path="res://Character Creation/scripts/BlendShapeDefinition.gd" id="1_qdoi5"]
+[ext_resource type="Script" uid="uid://cyus6xa3lrlru" path="res://Character Creation/scripts/CharacterType.gd" id="1_humgy"]
+[ext_resource type="Script" uid="uid://bpn20cwkegir7" path="res://Character Creation/scripts/BlendShapeDefinition.gd" id="1_qdoi5"]
 
 [sub_resource type="Resource" id="Resource_3505f"]
 script = ExtResource("1_qdoi5")

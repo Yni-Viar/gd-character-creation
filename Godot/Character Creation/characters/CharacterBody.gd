@@ -98,8 +98,8 @@ func set_skin_age_factor(factor:float):
 
 
 func set_eye_color(color):
-	var left_mat:StandardMaterial3D = get_eye_mesh_left().get_surface_override_material(1)
-	var right_mat:StandardMaterial3D = get_eye_mesh_right().get_surface_override_material(1)
+	var left_mat:StandardMaterial3D = get_eye_mesh_left().mesh.surface_get_material(1)
+	var right_mat:StandardMaterial3D = get_eye_mesh_right().mesh.surface_get_material(1)
 	left_mat.albedo_color = color
 	right_mat.albedo_color = color
 

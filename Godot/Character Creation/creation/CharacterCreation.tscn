@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://doex6dxwxubhc"]
 
 [ext_resource type="PackedScene" uid="uid://b7msu76amvh35" path="res://Character Creation/characters/human/human_female/human_female.tscn" id="1_3k4xk"]
-[ext_resource type="Script" path="res://Character Creation/creation/CreationCameraController.gd" id="2_hptar"]
-[ext_resource type="Script" path="res://Character Creation/creation/CharacterOptionsGenerator.gd" id="2_xpwym"]
-[ext_resource type="Script" path="res://Character Creation/creation/CharacterOptionsApplyer.gd" id="3_rchqw"]
+[ext_resource type="Script" uid="uid://errodnvtgnor" path="res://Character Creation/creation/CreationCameraController.gd" id="2_hptar"]
+[ext_resource type="Script" uid="uid://cloeqd3yx4gfe" path="res://Character Creation/creation/CharacterOptionsGenerator.gd" id="2_xpwym"]
+[ext_resource type="Script" uid="uid://c63ubyxptinlb" path="res://Character Creation/creation/CharacterOptionsApplyer.gd" id="3_rchqw"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_udbo3"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -158,12 +158,14 @@ tabContainer_node = NodePath("../CharacterOptionsGenerator")
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 tab_alignment = 1
+current_tab = 0
 script = ExtResource("2_xpwym")
 character_node_path = NodePath("../../../Character")
 
 [node name="Body" type="VBoxContainer" parent="GUI/CreationPanel/CharacterOptionsGenerator"]
 layout_mode = 2
 theme_override_constants/separation = 16
+metadata/_tab_index = 0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="GUI/CreationPanel/CharacterOptionsGenerator/Body"]
 layout_mode = 2
@@ -194,6 +196,7 @@ presets_visible = false
 [node name="Head" type="VBoxContainer" parent="GUI/CreationPanel/CharacterOptionsGenerator"]
 visible = false
 layout_mode = 2
+metadata/_tab_index = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="GUI/CreationPanel/CharacterOptionsGenerator/Head"]
 layout_mode = 2
@@ -241,6 +244,7 @@ presets_visible = false
 [node name="Face" type="VBoxContainer" parent="GUI/CreationPanel/CharacterOptionsGenerator"]
 visible = false
 layout_mode = 2
+metadata/_tab_index = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="GUI/CreationPanel/CharacterOptionsGenerator/Face"]
 layout_mode = 2

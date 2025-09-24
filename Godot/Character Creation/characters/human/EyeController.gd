@@ -58,4 +58,3 @@ func _process(delta: float) -> void:
 		rot = clamp(rot * 2, -45, 45) / 45
 		
 		animTree.set(eyelid_anim_path, rot)
-
